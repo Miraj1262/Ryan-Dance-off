@@ -1,0 +1,64 @@
+
+body {
+    font-family: 'Comic Sans MS', 'Arial', sans-serif;
+    background-color: #1a1a2e;
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+#game-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+#game-stage {
+    background: linear-gradient(45deg, #3a0ca3, #7209b7);
+    border: 5px solid #f72585;
+    width: 80%;
+    height: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+#ryan, #ricardo {
+    width: 100px;
+    position: absolute;
+}
+#ryan {
+    left: 30%;
+    animation: ryan-dance 1s infinite alternate;
+}
+#ricardo {
+    right: 30%;
+    animation: ricardo-dance 1s infinite alternate;
+}
+@keyframes ryan-dance {
+    from { transform: translateY(0); }
+    to { transform: translateY(-20px); }
+}
+@keyframes ricardo-dance {
+    from { transform: translateY(0); }
+    to { transform: translateY(-20px); }
+}
+#dance-instructions {
+    font-size: 1.5rem;
+    margin-top: 20px;
+}
+#score-board {
+    margin-top: 20px;
+}
+#start-button {
+    background-color: #7209b7;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    color: #fff;
+    cursor: pointer;
+}
+#start-button:hover {
+    background-color: #560bad;
+}
